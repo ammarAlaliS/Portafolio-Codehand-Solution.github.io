@@ -68,31 +68,17 @@
 
 ### Prerequisites
 
-In order to run this project you need:
-
-
 
 ### Setup
-
-use git clone git@github.com:WalidAmmarAli/PortafolioProjectS.git  
+ 
 
 ### Install
-
-Install this project with:
-
-
 
 
 ### Usage
 
-use visual studio code or any code editor to see the the file
-
-
 
 ### Run tests
-
-To run tests, run the following command:
-
 
 
 ### Deployment
