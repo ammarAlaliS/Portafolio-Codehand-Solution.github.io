@@ -285,8 +285,6 @@ main {
   align-items: center;
   gap: 2rem;
   position: relative;
-  
- 
 }
 
 .aboutMeSectionbox {
@@ -296,8 +294,6 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  
-  
 }
 
 .aboutMeSectionTitle {
@@ -306,7 +302,6 @@ main {
   font-size: 49px;
   color: #ff6b00;
   font-family: 'Crete Round', serif !important;
-
 }
 
 .aboutMeSectionP {
@@ -337,13 +332,11 @@ main {
   font-weight: 600;
   border-radius: 2px;
 }
-.bgPicture_aboutMe{
+
+.bgPicture_aboutMe {
   position: absolute;
   top: 415px;
   right: 0;
- 
-  
- 
 }
 
 .tecnologiesSection {
