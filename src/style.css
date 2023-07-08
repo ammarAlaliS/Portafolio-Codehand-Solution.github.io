@@ -623,12 +623,10 @@ main {
   outline: none;
   font-family: 'Inter', sans-serif;
 }
-.formTextArea textarea::placeholder{
-  font-style: italic;
-}
 
 .formTextArea textarea::placeholder {
   color: #091e42;
+  font-style: italic;
 }
 
 .formButton {
