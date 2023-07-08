@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 body,
 html,
@@ -432,9 +431,6 @@ main {
 
 .insideDiv li {
   margin-top: 0.5rem;
-}
-
-.insideDiv ul a {
   text-decoration: none;
   font-size: 27px;
   font-weight: 300;
@@ -499,9 +495,6 @@ main {
 
 .insideDiv_2 li {
   margin-top: 0.5rem;
-}
-
-.insideDiv_2 ul a {
   text-decoration: none;
   font-size: 27px;
   font-weight: 300;
@@ -559,9 +552,6 @@ main {
 
 .insideDiv_3 li {
   margin-top: 0.5rem;
-}
-
-.insideDiv_3 ul a {
   text-decoration: none;
   font-size: 27px;
   font-weight: 300;
