@@ -683,23 +683,26 @@ main {
 
 /* Hovers */
 
-.SeeProjectButton button:hover{
-  background-color: #FFF5E1;
+.SeeProjectButton button:hover {
+  background-color: #fff5e1;
   border: 1px solid #ff6b00;
   color: #ff6b00;
 }
-.modalSeeProjectButton button:hover{
-  background-color: #FFF5E1;
+
+.modalSeeProjectButton button:hover {
+  background-color: #fff5e1;
   border: 1px solid #ff6b00;
   color: #ff6b00;
 }
-.aboutMeSectionButtom button:hover{
-  background-color: #FFF5E1;
+
+.aboutMeSectionButtom button:hover {
+  background-color: #fff5e1;
   border: 1px solid #ff6b00;
   color: #ff6b00;
 }
-.formButton button:hover{
-  background-color: #FFF5E1;
+
+.formButton button:hover {
+  background-color: #fff5e1;
   border: 1px solid #ff6b00;
   color: #ff6b00;
 }
