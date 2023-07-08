@@ -680,3 +680,26 @@ main {
   justify-content: center;
   border-top: 1px solid #909aac7a;
 }
+
+/* Hovers */
+
+.SeeProjectButton button:hover{
+  background-color: #FFF5E1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+.modalSeeProjectButton button:hover{
+  background-color: #FFF5E1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+.aboutMeSectionButtom button:hover{
+  background-color: #FFF5E1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+.formButton button:hover{
+  background-color: #FFF5E1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
