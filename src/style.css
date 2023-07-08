@@ -619,10 +619,12 @@ main {
   resize: none;
   border: none;
   font-size: 16px;
-  font-style: italic;
   background-color: transparent;
   outline: none;
   font-family: 'Inter', sans-serif;
+}
+.formTextArea textarea::placeholder{
+  font-style: italic;
 }
 
 .formTextArea textarea::placeholder {
