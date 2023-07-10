@@ -98,6 +98,12 @@ Github page deployment. live vertion https://walidammarali.github.io/PortafolioP
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ammar-ali-384625262/)
 
 
+👤 IsaMarvin
+
+- GitHub: [IsaMarvin](https://github.com/IsaMarvin)
+- LinkedIn: [IsaMarvin](https://www.linkedin.com/in/isamarvin/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
