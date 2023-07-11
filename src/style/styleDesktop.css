@@ -1,173 +1,333 @@
 @media screen and (min-width: 768px) {
-    @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
+  body,
+  html,
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-    body,
-    html,
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+  .mobileDesigne {
+    display: none;
+  }
+
+  .desktop_designe {
+    display: block;
+  }
+
+  .header-navbar {
+    background-color: #3c3a39;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-navbar-item-box {
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-navbar__logo {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .header-navbar__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .links {
+    padding-right: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-navbar__links a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mail {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  /* main information */
+
+  .header-mainDivContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainTitleInfoPage {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media screen and (min-width: 1216px) {
+    .header-mainDivContainer__title {
+      color: #ff6b00;
+      font-size: 50px;
+      font-family: 'Crete Round', serif;
+      font-weight: 300;
+      line-height: 5rem;
     }
 
-    .mobileDesigne {
-        display: none;
+    .mainPageInformation {
+      height: 870px;
+      width: 100%;
+      background-color: #1c1a19;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1318px) {
+    .header-mainDivContainer__title {
+      color: #ff6b00;
+      font-size: 42px;
+      font-family: 'Crete Round', serif;
+      font-weight: 300;
+      line-height: 5rem;
+      min-width: 350px;
     }
 
-    .desktop_designe {
-        display: block;
+    .mainPageInformation {
+      height: 800px;
+      width: 100%;
+      background-color: #1c1a19;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100%;
+    }
+  }
+
+  .header-mainDivContainer__subtitle {
+    font-size: 24px;
+    color: #fff5e1;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    min-width: 350px;
+  }
+
+  .header-mainDivContainer__info {
+    color: #fff5e1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    min-width: 350px;
+  }
+
+  .header-mainDivContainer__socialMedia {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 7%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-mainDivContainer__socialMedia ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .bgImgM {
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/Img/Illustration-header.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-position-y: center;
+  }
+
+  /* modals-section */
+
+  .modals-section {
+    width: 100%;
+    height: 1805px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modals-section-sub-div {
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .modals-section__title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: 'Crete Round', serif;
+  }
+
+  .line {
+    border-bottom: 2px solid #1c1a19;
+    width: 100%;
+  }
+
+  .modals-section__mainbox {
+    margin-top: 90px;
+  }
+
+  .modalComponent_one {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .modalComponent__img_one {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modalComponent__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .modalComponent__img_one img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modalComponent__info-title h2 {
+    color: #091e42;
+    font-size: 30px;
+    font-weight: 200;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .modals-section__title h2 {
+      min-width: 350px;
+      margin-right: 1rem;
+      font-size: 45px;
+      font-weight: 400;
+      font-style: bold;
     }
 
-    .header-navbar {
-        background-color: #3c3a39;
-        width: 100%;
-        height: 4rem;
-        display: flex;
-        justify-content: center;
+    .modalComponent__info-technologies {
+      display: flex;
+      list-style: none;
+      gap: 0.8rem;
     }
 
-    .header-navbar-item-box {
-        width: 80%;
-        height: 4rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .modalComponent__info-technologies li {
+      padding: 8px 10px 8px 10px;
+      border: 1px solid #091e42;
+      text-decoration: none;
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #091e42;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1000px) {
+    .modals-section__title h2 {
+      min-width: 300px;
+      margin-right: 1rem;
+      font-size: 40px;
+      font-weight: 400;
+      font-style: bold;
     }
 
-    .header-navbar__logo {
-        font-size: 16px;
-        color: #fff;
+    .modalComponent__info-description {
+      font-size: 17px;
+      line-height: 19px;
+      font-weight: 400;
+      color: #091e42;
     }
 
-    .header-navbar__links {
-        list-style: none;
-        display: flex;
-        align-items: center;
-
+    .modalComponent__info-technologies {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 0.3rem;
     }
 
-    .links {
-        padding-right: 1.5rem;
-        display: flex;
-        align-items: center;
+    .modalComponent__info-technologies li {
+      padding: 4px 5px 4px 5px;
+      border: 1px solid #091e42;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: #091e42;
     }
 
-    .header-navbar__links a {
-        text-decoration: none;
-        color: #fff;
-    }
-    .mail{
-        height: 4rem;
-        display: flex;
-        align-items: center;
-    }
-    /* main information */
-  
-
-    .header-mainDivContainer {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .modalComponent__info-button {
+      width: 100%;
+      height: auto;
+      margin-top: 0.3rem;
     }
 
-    .mainTitleInfoPage {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+    .modalComponent__info-button button {
+      width: auto;
+      background-color: #ff6b00;
+      padding: 8px;
+      color: #fff;
+      border: none;
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1000px) {
+    .modalComponent__info-description {
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: 400;
+      color: #091e42;
     }
 
-    @media screen and (min-width: 1216px) {
-        .header-mainDivContainer__title {
-            color: #ff6b00;
-            font-size: 50px;
-            font-family: 'Crete Round', serif;
-            font-weight: 300;
-            line-height: 5rem;
-        }
-        .mainPageInformation {
-            height: 870px;
-            width: 100%;
-            background-color: #1c1a19;
-            position: relative;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 100%;
-    
-    
-        }
-    }
-    
-    @media screen and (min-width: 768px) and (max-width: 1318px) {
-        .header-mainDivContainer__title {
-            color: #ff6b00;
-            font-size: 42px;
-            font-family: 'Crete Round', serif;
-            font-weight: 300;
-            line-height: 5rem;
-            min-width: 350px;
-        }
-        .mainPageInformation {
-            height: 800px;
-            width: 100%;
-            background-color: #1c1a19;
-            position: relative;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 100%;
-    
-    
-        }
-    }
-    
-    .header-mainDivContainer__subtitle {
-        font-size: 24px;
-        color: #fff5e1;
-        font-weight: 700;
-        font-family: 'Roboto', sans-serif;
-        min-width: 350px;
+    .modalComponent__info-technologies li {
+      padding: 6px 7px 6px 7px;
+      border: 1px solid #091e42;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: #091e42;
     }
 
-    .header-mainDivContainer__info {
-        color: #fff5e1;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 32px;
-        font-family: 'Roboto', sans-serif;
-        min-width: 350px;
+    .modalComponent__info-title h2 {
+      color: #091e42;
+      font-size: 35px;
+      font-weight: 200;
     }
-
-    .header-mainDivContainer__socialMedia {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 7%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-mainDivContainer__socialMedia ul {
-
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.7rem;
-    }
-
-    .bgImgM {
-        width: 100%;
-        height: 100%;
-        background-image: url(/src/Img/Illustration-header.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-    }
-    
+  }
 }
