@@ -52,7 +52,7 @@
     color: #ff6b00;
     font-size: 56px;
     font-family: 'Crete Round', serif !important;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .titleInfo {
@@ -453,8 +453,9 @@
     width: auto;
     height: 41.46px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-right: 3.5rem;
   }
 
@@ -463,7 +464,7 @@
   }
 
   .DiamanIcon_2 h2 {
-    width: 100%;
+    width: auto;
     height: auto;
     font-size: 30px;
     margin-bottom: 0;
