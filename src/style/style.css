@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 590px;
+    height: 600px;
     position: relative;
     overflow: hidden;
   }
@@ -272,7 +272,7 @@
   /* About me section */
   .aboutMeSection {
     width: 100%;
-    height: 1801px;
+    height: 1800px;
     background-color: #1c1a19;
     display: flex;
     flex-direction: column;
