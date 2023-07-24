@@ -64,35 +64,55 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### 🚀 Live Demo
+## 🚀 Live Demo <a name="live-demo"></a>
 
-Live Demo Link: https://ammaralalis.github.io/Portafolio-codehand-solution.github.io/
-
-### Deploy-with-Github-pages
-
-Live Demo Link: https://ammaralalis.github.io/Portafolio-codehand-solution.github.io/
-
-
+- [See Live Demo](https://ammaralalis.github.io/Portafolio-codehand-solution.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-
+1. Web Browser.
+2. Code Editor.
+3. Git - SCM
+4. NodeJS
+5. NPM
 
 ### Setup
 
-use git clone git@github.com:WalidAmmarAli/PortafolioProjectS.git  
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone https://github.com/ammarAlaliS/Portafolio-codehand-solution.github.io.git
+```
 
 ### Install
 
-Install this project with:
+To install this project:
+
+Run this command:
+
+```sh
+  cd my-project
+  npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Usage
@@ -102,6 +122,10 @@ use visual studio code or any code editor to see the the file
 ### Run tests
 
 To run tests, run the following command:
+
+Run npx stylelint "**/*.{css,scss}" on the root of your directory of your project.
+
+Run npx eslint . on the root of your directory of your project.
 
 ### Deployment
 
