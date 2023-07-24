@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/styleDesktop.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/styleDesktop.css">
     <title>Ammar_Portafolio</title>
 </head>
 
-<body>
+<body id="body">
     <!--versión mobile -->
-    
     <section class="mobileDesigne">
         <header>
             <nav class="navBar">
@@ -20,7 +19,7 @@
                         <h2>Ammar Ali.</h2>
                     </div>
                     <div class="icon">
-                        <img src="./Img/Union.png" alt="Icon">
+                        <img src="./src/Img/Union.png" alt="Icon" id="openMenuIcon">
                     </div>
                 </div>
             </nav>
@@ -41,11 +40,11 @@
                     </div>
                     <div class="socialMedia">
                         <ul>
-                            <li><a href="#"><img src="./icon/Icon -GitHub.png" alt=""></a></li>
-                            <li><a href="#"><img src="./icon/Icon - Linkedin.png" alt=""></a></li>
-                            <li><a href="#"><img src="./icon/Icon - Angelist.png" alt=""></a></li>
-                            <li><a href="#"><img src="./icon/Icon - Twitter.png" alt=""></a></li>
-                            <li><a href="#"><img src="./icon/Disabled.png" alt="" class="iconM"></a></li>
+                            <li><a href="#"><img src="./src/icon/Icon -GitHub.png" alt=""></a></li>
+                            <li><a href="#"><img src="./src/icon/Icon - Linkedin.png" alt=""></a></li>
+                            <li><a href="#"><img src="./src/icon/Icon - Angelist.png" alt=""></a></li>
+                            <li><a href="#"><img src="./src/icon/Icon - Twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="./src/icon/Disabled.png" alt="" class="iconM"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,10 +52,19 @@
             </main>
         </header>
 
-        <section class="menu">
-            
+        <section class="menu" id="menu_container">
+            <div class="menu_container">
+                <img src="./src/icon/close.png" alt="IconClose" id="IconClose">
+            </div>
+            <div class="menu_links">
+                <ul>
+                    <li><a href="#Portafolio" class="linksMenu">Portfolio</a></li>
+                    <li><a href="#About" class="linksMenu">About</a></li>
+                    <li><a href="#Contact" class="linksMenu">Contact</a></li>
+                </ul>
+            </div>
         </section>
-        <section class="modals">
+        <section class="modals" id="Portafolio">
             <div class="sectionTitle">
                 <div class="subTitlebox">
                     <h2>My Recent Works</h2>
@@ -65,7 +73,7 @@
             <div class="modalmainbox">
                 <div class="modalComponent">
                     <div class="modalImg">
-                        <img src="./Img/Img Placeholder.png" alt="workPicture">
+                        <img src="./src/Img/Img Placeholder.png" alt="workPicture">
                     </div>
                     <div class="informationAboutWorkBox">
                         <div class="workTitle">
@@ -90,7 +98,7 @@
                 </div>
                 <div class="modelminbox">
                     <div class="modalPicture">
-                        <img src="./Img/ProjectImg.png" alt="modelPicture">
+                        <img src="./src/Img/ProjectImg.png" alt="modelPicture">
                         <div class="boxModalInfomartions">
                             <div class="boxModalInfomartion_title">
                                 <h2>Profesional Art Printing Data</h2>
@@ -112,7 +120,7 @@
                     </div>
                 </div>
                 <div class="modalPicture">
-                    <img src="./Img/ProjectImg.png" alt="modelPicture">
+                    <img src="./src/Img/ProjectImg.png" alt="modelPicture">
                     <div class="boxModalInfomartions">
                         <div class="boxModalInfomartion_title">
                             <h2>Profesional Art Printing Data</h2>
@@ -133,7 +141,7 @@
                     </div>
                 </div>
                 <div class="modalPicture">
-                    <img src="./Img/ProjectImg.png" alt="modelPicture">
+                    <img src="./src/Img/ProjectImg.png" alt="modelPicture">
                     <div class="boxModalInfomartions">
                         <div class="boxModalInfomartion_title">
                             <h2>Profesional Art Printing Data</h2>
@@ -154,7 +162,7 @@
                     </div>
                 </div>
                 <div class="modalPicture">
-                    <img src="./Img/ProjectImg.png" alt="modelPicture">
+                    <img src="./src/Img/ProjectImg.png" alt="modelPicture">
                     <div class="boxModalInfomartions">
                         <div class="boxModalInfomartion_title">
                             <h2>Profesional Art Printing Data</h2>
@@ -175,7 +183,7 @@
                     </div>
                 </div>
                 <div class="modalPicture">
-                    <img src="./Img/ProjectImg.png" alt="modelPicture">
+                    <img src="./src/Img/ProjectImg.png" alt="modelPicture">
                     <div class="boxModalInfomartions">
                         <div class="boxModalInfomartion_title">
                             <h2>Profesional Art Printing Data</h2>
@@ -196,7 +204,7 @@
                     </div>
                 </div>
                 <div class="modalPicture">
-                    <img src="./Img/ProjectImg.png" alt="modelPicture">
+                    <img src="./src/Img/ProjectImg.png" alt="modelPicture">
                     <div class="boxModalInfomartions">
                         <div class="boxModalInfomartion_title">
                             <h2>Profesional Art Printing Data</h2>
@@ -219,7 +227,7 @@
             </div>
         </section>
 
-        <section class="aboutMeSection">
+        <section class="aboutMeSection" id="About">
             <div class="aboutMeSectionbox">
                 <div class="aboutMeSectionTitle">
                     <h2>About me</h2>
@@ -234,7 +242,7 @@
                     <button>Get my resume</button>
                 </div>
                 <div class="bgPicture_aboutMe">
-                    <img src="./Img/frame.png" alt="">
+                    <img src="./src/Img/frame.png" alt="">
                 </div>
             </div>
             <div class="tecnologiesSection">
@@ -246,7 +254,7 @@
                         <div class="insideDiv">
                             <ul>
                                 <li class="imgH2Box">
-                                    <img src="./icon/Rectangle 55.png" alt="Rectangle">
+                                    <img src="./src/icon/Rectangle 55.png" alt="Rectangle">
                                     <h2>Language</h2>
                                 </li>
                                 <ul>
@@ -265,7 +273,7 @@
                         <div class="insideDiv_2">
                             <ul>
                                 <li class="DiamanIcon_2">
-                                    <img src="./icon/Rectangle 56.png" alt="Rectangle">
+                                    <img src="./src/icon/Rectangle 56.png" alt="Rectangle">
                                     <h2>Frameworks</h2>
                                 </li>
                                 <ul>
@@ -283,7 +291,7 @@
                         <div class="insideDiv_3">
                             <ul>
                                 <li class="LanguageBoxTitle_3">
-                                    <img src="./icon/Rectangle 57.png" alt="Rectangle">
+                                    <img src="./src/icon/Rectangle 57.png" alt="Rectangle">
                                     <h2>Skills</h2>
                                 </li>
                                 <ul>
@@ -299,7 +307,7 @@
                 </div>
             </div>
         </section>
-        <section class="contactSeccion">
+        <section class="contactSeccion" id="Contact">
             <div class="contactSeccionTitle">
                 <h2>I'm always <br> interested in hearing about new projects, so if you'd like to chat please get in
                     touch.
@@ -324,11 +332,11 @@
         </section>
         <section class="links">
             <ul class="socialMediaContact">
-                <li><a href="#"><img src="./IconBlack/Icon -GitHub.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Linkedin.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Angelist.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Twitter.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Medium.png" alt="" class="iconM"></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon -GitHub.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Linkedin.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Angelist.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Medium.png" alt="" class="iconM"></a></li>
             </ul>
         </section>
     </section>
@@ -346,7 +354,7 @@
                         <li class="links"><a href="">Portafolio</a></li>
                         <li class="links"><a href="">About</a></li>
                         <li class="links"><a href="">Contact</a></li>
-                        <li class="mail"><img src="./icon/Icon - Mail.png" alt="Mail"></li>
+                        <li class="mail"><img src="./src/icon/Icon - Mail.png" alt="Mail"></li>
                     </ul>
                 </div>
             </nav>
@@ -366,13 +374,11 @@
                         </div>
                         <div class="header-mainDivContainer__socialMedia">
                             <ul>
-                                <li><a href="#"><img src="./icon/Icon -GitHub.png" alt=""></a></li>
-                                <li><a href="#"><img src="./icon/Icon - Linkedin.png" alt=""></a></li>
-                                <li><a href="#"><img src="./icon/Icon - Angelist.png" alt=""></a></li>
-                                <li><a href="#"><img src="./icon/Icon - Twitter.png" alt=""></a></li>
-                                <li><a href="#"><img src="./icon/Disabled.png" alt=""
-                                            class="header-mainDivContainer__iconM"></a>
-                                </li>
+                                <li><a href="#"><img src="./src/icon/Icon -GitHub.png" alt=""></a></li>
+                                <li><a href="#"><img src="./src/icon/Icon - Linkedin.png" alt=""></a></li>
+                                <li><a href="#"><img src="./src/icon/Icon - Angelist.png" alt=""></a></li>
+                                <li><a href="#"><img src="./src/icon/Icon - Twitter.png" alt=""></a></li>
+                                <li><a href="#"><img src="./src/icon/Disabled.png" alt="" class="header-mainDivContainer__iconM"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -393,7 +399,7 @@
                 <div class="modals-section__mainbox">
                     <div class="modalComponent_one">
                         <div class="modalComponent__img_one">
-                            <img src="./Img/Img PlaceholderDesktop.png" alt="workPicture">
+                            <img src="./src/Img/Img PlaceholderDesktop.png" alt="workPicture">
                         </div>
                         <div class="modalComponent__info">
                             <div class="modalComponent__info-title">
@@ -423,7 +429,7 @@
                 <div class="layout">
                     <div class="box_Conteiner component_one">
                         <div class="component_one_img">
-                            <img src="./imgDesktop/Img Placeholder.png" alt="">
+                            <img src="./src/imgDesktop/Img Placeholder.png" alt="">
                             <div class="componet_one_button">
                                 <button>See project</button>
                             </div>
@@ -431,7 +437,7 @@
                     </div>
                     <div class="component_two">
                         <div class="component_one_img">
-                            <img src="./imgDesktop/Img Placeholder_2.png" alt="">
+                            <img src="./src/imgDesktop/Img Placeholder_2.png" alt="">
                             <div class="component_two_box">
                                 <div class="component_two_grid">
                                     <div class="component_two_title">
@@ -452,7 +458,7 @@
                     </div>
                     <div class="component_two">
                         <div class="component_one_img">
-                            <img src="./imgDesktop/Img Placeholder_3.png" alt="">
+                            <img src="./src/imgDesktop/Img Placeholder_3.png" alt="">
                             <div class="component_two_box">
                                 <div class="component_two_grid">
                                     <div class="component_two_title">
@@ -473,7 +479,7 @@
                     </div>
                     <div class="component_two">
                         <div class="component_one_img">
-                            <img src="./imgDesktop/Img Placeholder_4.png" alt="">
+                            <img src="./src/imgDesktop/Img Placeholder_4.png" alt="">
                             <div class="component_two_box">
                                 <div class="component_two_grid">
                                     <div class="component_two_title">
@@ -494,7 +500,7 @@
                     </div>
                     <div class="component_two">
                         <div class="component_one_img">
-                            <img src="./imgDesktop/Img Placeholder_2.png" alt="">
+                            <img src="./src/imgDesktop/Img Placeholder_2.png" alt="">
                             <div class="component_two_box">
                                 <div class="component_two_grid">
                                     <div class="component_two_title">
@@ -515,7 +521,7 @@
                     </div>
                     <div class="component_two">
                         <div class="component_one_img">
-                            <img src="./imgDesktop/Img Placeholder_3.png" alt="">
+                            <img src="./src/imgDesktop/Img Placeholder_3.png" alt="">
                             <div class="component_two_box">
                                 <div class="component_two_grid">
                                     <div class="component_two_title">
@@ -571,7 +577,7 @@
                         <div class="technologiesSection__languageBox">
                             <ul class="Stack">
                                 <li class="technologiesSection__imgH2Box">
-                                    <img src="./icon/Rectangle 55.png" alt="Rectangle">
+                                    <img src="./src/icon/Rectangle 55.png" alt="Rectangle">
                                     <h2>Language</h2>
                                 </li>
                                 <ul class="TecnologiesStack">
@@ -588,7 +594,7 @@
                         <div class="technologiesSection__languageBox">
                             <ul class="Stack">
                                 <li class="technologiesSection__imgH2Box">
-                                    <img src="./icon/Rectangle 56.png" alt="Rectangle">
+                                    <img src="./src/icon/Rectangle 56.png" alt="Rectangle">
                                     <h2>Frameworks</h2>
                                 </li>
                                 <ul class="TecnologiesStack">
@@ -605,7 +611,7 @@
                         <div class="technologiesSection__languageBox">
                             <ul class="Stack">
                                 <li class="img__Skill">
-                                    <img src="./icon/Rectangle 57.png" alt="Rectangle">
+                                    <img src="./src/icon/Rectangle 57.png" alt="Rectangle">
                                     <h2>Skills</h2>
                                 </li>
                                 <ul class="TecnologiesStack">
@@ -653,14 +659,16 @@
 
         <section class="links_footer">
             <ul class="links__socialMediaContact">
-                <li><a href="#"><img src="./IconBlack/Icon -GitHub.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Linkedin.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Angelist.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Twitter.png" alt=""></a></li>
-                <li><a href="#"><img src="./IconBlack/Icon - Medium.png" alt="" class="links__iconM"></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon -GitHub.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Linkedin.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Angelist.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="./src/IconBlack/Icon - Medium.png" alt="" class="links__iconM"></a></li>
             </ul>
         </section>
     </section>
+
+    <script src="./src/js/menu.js"></script>
 </body>
 
 </html>
