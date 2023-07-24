@@ -114,11 +114,6 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-### Usage
-
-use visual studio code or any code editor to see the the file
-
 ### Run tests
 
 To run tests, run the following command:
