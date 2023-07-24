@@ -104,13 +104,12 @@
     background-color: #3c3a39;
     z-index: 2;
     display: none;
-
   }
 
   .menu_container {
     width: 87%;
     height: 4rem;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +128,7 @@
 
   .menu_links ul {
     width: 87%;
-    margin: 0px auto;
+    margin: 0 auto;
     list-style: none;
     display: grid;
     grid-template-rows: min-content min-content min-content;
@@ -137,7 +136,7 @@
   }
 
   .menu_links li {
-    border-bottom: 1px solid #6F6C6B;
+    border-bottom: 1px solid #6f6c6b;
     padding: 0.8rem 0.5rem;
   }
 
@@ -147,7 +146,7 @@
     font-weight: 700;
     line-height: 44px;
     text-decoration: none;
-    color: #FFF5E1;
+    color: #fff5e1;
   }
 
   /* Modals Section */
@@ -429,7 +428,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow: none;
     gap: 1rem;
   }
 
