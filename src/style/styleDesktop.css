@@ -20,7 +20,6 @@
   }
 
   .header-navbar {
-    background-color: #091e42;
     background-color: #3c3a39;
     width: 100%;
     height: 4rem;
@@ -37,7 +36,7 @@
   }
 
   .header-navbar__logo {
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
   }
 
@@ -56,6 +55,7 @@
   .header-navbar__links a {
     text-decoration: none;
     color: #fff;
+    font-size: 1.2rem;
   }
 
   .mail {
@@ -101,7 +101,7 @@
   }
 
   .header-mainDivContainer__subtitle {
-    font-size: 24px;
+    font-size: 26px;
     color: #fff5e1;
     font-weight: 700;
     font-family: 'inter', sans-serif;
@@ -702,8 +702,26 @@
       padding-bottom: 2rem;
     }
 
+    .header-navbar__logo {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .header-navbar__links a {
+      font-size: 1.3rem;
+    }
+
+    .header-mainDivContainer__info {
+      font-size: 21px;
+    }
+
     .modalComponent__info-title {
       height: auto;
+    }
+
+    .header-mainDivContainer__title {
+      font-size: 45px;
+      min-width: 400px;
     }
 
     .modalComponent__info-title h2 {
@@ -770,6 +788,24 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 1rem;
+    }
+
+    .header-navbar__logo {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .header-mainDivContainer__title {
+      font-size: 50px;
+      min-width: 400px;
+    }
+
+    .header-navbar__links a {
+      font-size: 1.4rem;
+    }
+
+    .header-mainDivContainer__info {
+      font-size: 22px;
     }
 
     .component_two_title {

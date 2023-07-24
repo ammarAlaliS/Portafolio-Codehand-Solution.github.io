@@ -9,6 +9,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - 🚀 [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -60,30 +61,70 @@
 - **Add the html**
 - **Add Css to styles**
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [See Live Demo](https://ammaralalis.github.io/Portafolio-codehand-solution.github.io/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
+In order to run this project you need:
+
+1. Web Browser.
+2. Code Editor.
+3. Git - SCM
+4. NodeJS
+5. NPM
 
 ### Setup
- 
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone https://github.com/ammarAlaliS/Portafolio-codehand-solution.github.io.git
+```
 
 ### Install
 
+To install this project:
+
+Run this command:
+
+```sh
+  cd my-project
+  npm install
+```
 
 ### Usage
 
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Run tests
 
+To run tests, run the following command:
+
+Run npx stylelint "**/*.{css,scss}" on the root of your directory of your project.
+
+Run npx eslint . on the root of your directory of your project.
 
 ### Deployment
 
-Github page deployment. live vertion https://walidammarali.github.io/PortafolioProjectS/
+Github page deployment. live vertion https://ammaralalis.github.io/PortafolioProject/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,6 +138,7 @@ Github page deployment. live vertion https://walidammarali.github.io/PortafolioP
 - Twitter: [@AmmarAli3111]()
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ammar-ali-384625262/)
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -107,13 +149,12 @@ Github page deployment. live vertion https://walidammarali.github.io/PortafolioP
 
 
 ## 🤝 Contributing <a name="contributing"></a>
-👤 IsaMarvin
 
-- GitHub: [IsaMarvin](https://github.com/IsaMarvin)
-- LinkedIn: [IsaMarvin](https://www.linkedin.com/in/isamarvin/)
+Name: Abdul Salam https://github.com/AbdulSalamAbro colaborate on Form-section-pair-programing branch <br>
+Name: wilfried muyisa https://github.com/WilfriedM01 colaborate on mobile-menu branch
 
-Ahmed Alpanna
-[@ALPANNA-GH](https://github.com/ALPANNA-GH/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
