@@ -83,7 +83,7 @@
 
 ### Deployment
 
-Github page deployment. live vertion https://walidammarali.github.io/PortafolioProjectS/
+Github page deployment. live vertion: https://ammaralalis.github.io/Portafolio-codehand-solution.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
