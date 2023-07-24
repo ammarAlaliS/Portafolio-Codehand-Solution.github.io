@@ -38,6 +38,10 @@
     cursor: pointer;
   }
 
+  .logoBox a {
+    text-decoration: none;
+  }
+
   main {
     background-color: #1c1a19;
     display: flex;
