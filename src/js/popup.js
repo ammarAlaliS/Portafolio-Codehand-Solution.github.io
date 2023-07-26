@@ -13,6 +13,7 @@ function openPopup() {
       buttonOne: "./src/icon/Icon-see live.png",
       buttonTwo: "./src/icon/Icon -GitHub-white.png",
     },
+ 
   ];
 
   const popupHTML = data.map(componentToHTML).join("");
