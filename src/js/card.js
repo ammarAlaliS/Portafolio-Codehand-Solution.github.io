@@ -83,8 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>${info}</p>
                     </div>
                     <ul class="component_two_tecnologies">
-                        ${technologies
-                          .map((tech) => `<li>${tech}</li>`).join("")}
+                        ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
                     </ul>
                 </div>
             </div>
@@ -95,3 +94,4 @@ document.addEventListener("DOMContentLoaded", function () {
   cardOne();
   cards();
 });
+
