@@ -1,7 +1,7 @@
 function firstComponent() {
     const firstComponentInfo = [
       {
-        img: "./src/Img/Img PlaceholderDesktop.png", 
+        img: "./src/Img/Img Placeholder.png", 
         title: "Multi-Post Stories",
         info: "A daily selection of privately personalized reads; no accounts or sign-ups required. It has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
         stack: ["CSS", "HTML", "Bootstrap", "Ruby"],
@@ -17,23 +17,25 @@ function firstComponent() {
   
   function firstCard({ img, title, info, stack, button, buttonId }) {
     return `
-      <div class="modalComponent__img_one">
-        <img src="${img}" alt="workPicture">
-      </div>
-      <div class="modalComponent__info">
-        <div class="modalComponent__info-title">
-          <h2>${title}</h2>
+    <div class="modalComponent">
+        <div class="modalImg">
+            <img src="" alt="workPicture">
         </div>
-        <div class="modalComponent__info-description">
-          <p>${info}</p>
+        <div class="informationAboutWorkBox">
+            <div class="workTitle">
+                <h2></h2>
+            </div>
+            <div class="workInfo">
+                
+            </div>
+            <ul class="Tecnologies">
+              
+            </ul>
+            <div class="SeeProjectButton">
+                <button>See Project</button>
+            </div>
         </div>
-        <ul class="modalComponent__info-technologies">
-          ${stack.map((tech) => `<li>${tech}</li>`).join("")}
-        </ul>
-        <div class="modalComponent__info-button">
-          <button id="buttonSee" data-buttonid="${buttonId}">${button}</button>
-        </div>
-      </div>
+    </div>
     `;
   }
 

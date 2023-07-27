@@ -2,21 +2,22 @@ const buttonSee = document.getElementById("buttonSee");
 const popupWindown = document.getElementById("popupWindown");
 const bodyMainBox = document.getElementById('bodyMainBox')
 
-function openPopup() {
+function openPopup(buttonId) {
   const data = [
     {
       title: "Keeping track of hundreds  of components website",
       closeImg: "./src/icon/close.png",
       technologies: ["HTML", "Bootstrap", "Ruby on rails"],
       img: "./src/Img/Snapshoot Portfolio.png",
-      info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
       buttonOne: "./src/icon/Icon-see live.png",
       buttonTwo: "./src/icon/Icon -GitHub-white.png",
+      buttonId: 0 
     },
- 
   ];
 
-  const popupHTML = data.map(componentToHTML).join("");
+  const componentInfo = data[buttonId]; 
+  const popupHTML = componentToHTML(componentInfo);
   popupWindown.innerHTML = popupHTML;
   popupWindown.style.display = "block";
   popupWindown.style.display = "flex";
@@ -28,14 +29,10 @@ function openPopup() {
 function closePopup() {
   popupWindown.style.display = "none";
   bodyMainBox.style.overflow = "auto"
-  
 }
 
-buttonSee.addEventListener("click", openPopup);
-
 function componentToHTML(componentInfo) {
-  const { title, closeImg, technologies, img, info, buttonOne, buttonTwo } =
-    componentInfo;
+  const { title, closeImg, technologies, img, info, buttonOne, buttonTwo } = componentInfo;
 
   return `
     <div class="popupSubContainer">
@@ -66,6 +63,10 @@ function componentToHTML(componentInfo) {
   `;
 }
 
+buttonSee.addEventListener("click", function(event) {
+  const buttonId = event.target.getAttribute("data-buttonid"); 
+  openPopup(buttonId); 
+});
 
 popupWindown.addEventListener('click', function(event) {
   if (event.target.id === "closePopupBtn") {
