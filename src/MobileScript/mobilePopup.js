@@ -1,6 +1,6 @@
-const buttonSee = document.getElementById("buttonSee");
-const popupWindown = document.getElementById("popupWindown");
-const bodyMainBox = document.getElementById('bodyMainBox')
+const buttonSeeMobile = document.getElementById("buttonSeeMobile");
+const popupWindow = document.getElementById("popupWindow");
+const bodyMainBo = document.querySelector('bodyM')
 
 function openPopup(buttonId) {
   const data = [
@@ -18,17 +18,17 @@ function openPopup(buttonId) {
 
   const componentInfo = data[buttonId]; 
   const popupHTML = componentToHTML(componentInfo);
-  popupWindown.innerHTML = popupHTML;
-  popupWindown.style.display = "block";
-  popupWindown.style.display = "flex";
-  popupWindown.style.justifyContent = "center";
-  popupWindown.style.alignItems = "center";  
-  bodyMainBox.style.overflow = "hidden"
+  popupWindow.innerHTML = popupHTML;
+  popupWindow.style.display = "block";
+  popupWindow.style.display = "flex";
+  popupWindow.style.justifyContent = "center";
+  popupWindow.style.alignItems = "center";  
+  bodyMainBo.style.overflow = "hidden"
 }
 
 function closePopup() {
-  popupWindown.style.display = "none";
-  bodyMainBox.style.overflow = "auto"
+  popupWindow.style.display = "none";
+  bodyMainBo.style.overflow = "auto"
 }
 
 function componentToHTML(componentInfo) {
@@ -63,7 +63,7 @@ function componentToHTML(componentInfo) {
   `;
 }
 
-buttonSee.addEventListener("click", function(event) {
+buttonSeeMobile.addEventListener("click", function(event) {
   const buttonId = event.target.getAttribute("data-buttonid"); 
   openPopup(buttonId); 
 });
