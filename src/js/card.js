@@ -1,96 +1,58 @@
-document.addEventListener("DOMContentLoaded", function () {
-  function cards() {
-    const cardData = [
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 0,
-      },
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 1,
-      },
-      {
-        title: "Profesional Art <br> Printing Data More",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_4.png",
-        id: 2,
-      },
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 3,
-      },
-      {
-        title: "Profesional Art <br> Printing Data More",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_4.png",
-        id: 4,
-      },
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 5,
-      },
-    ];
+const cardData = [
+  {
+    title: "Website Portfolio",
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    img: "./src/imgDesktop/Img Placeholder_3.png",
+    button: "See project",
+    id: 0,
+  },
+  {
+    title: "Website Portfolio",
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    img: "./src/imgDesktop/Img Placeholder_3.png",
+    button: "See project",
+    id: 1,
+  },
+  {
+    title: "Profesional Art <br> Printing Data More",
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    img: "./src/imgDesktop/Img Placeholder_4.png",
+    button: "See project",
+    id: 2,
+  },
+  {
+    title: "Website Portfolio",
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    img: "./src/imgDesktop/Img Placeholder_3.png",
+    button: "See project",
+    id: 3,
+  },
+  {
+    title: "Profesional Art <br> Printing Data More",
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    img: "./src/imgDesktop/Img Placeholder_4.png",
+    button: "See project",
+    id: 4,
+  },
+  {
+    title: "Website Portfolio",
+    info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    img: "./src/imgDesktop/Img Placeholder_3.png",
+    button: "See project",
+    id: 5,
+  },
+];
 
-    const cardDataOne = [
-      {
-        imgs: "./src/imgDesktop/Img Placeholder.png",
-        button: "See project",
-        id: 0,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_2.png",
-        button: "View project",
-        id: 1,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_3.png",
-        button: "Check it out",
-        id: 2,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_4.png",
-        button: "Explore",
-        id: 3,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_3.png",
-        button: "Check it out",
-        id: 4,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_4.png",
-        button: "Explore",
-        id: 5,
-      },
-    ];
+function cardComponent(cardData) {
+  const { title, info, technologies, img, button, id } = cardData;
 
-    const layout = document.querySelector(".layout");
-    const combinedData = cardData.map((data, index) => ({
-      ...data,
-      ...cardDataOne[index],
-    }));
-    const cardHTML = combinedData.map(cardComponent).join("");
-    layout.innerHTML = cardHTML;
-  }
-
-  function cardComponent(componentData) {
-    const { title, info, technologies, img, button, id } = componentData;
-
-    return `
+  return `
       <div class="component_two" id="card_${id}">
         <div class="component_one_img">
           <img src="${img}" alt="">
@@ -107,102 +69,157 @@ document.addEventListener("DOMContentLoaded", function () {
               </ul>
             </div>
           </div>
-          <div class="componet_one_button" id="button_${id}"> <!-- Use "button_${id}" -->
-                <button>${button}</button>
-            </div>
+          <div class="componet_one_button" id="button_${id}"> 
+            <button class="buttonCards">${button}</button>
+          </div>
         </div>
       </div>
     `;
-  }
+}
 
-  cards();
+const layouts = document.querySelectorAll(".layout");
 
-  const buttonsArray = [
-    document.getElementById("button_0"),
-    document.getElementById("button_1"),
-    document.getElementById("button_2"),
-    document.getElementById("button_3"),
-    document.getElementById("button_4"),
-    document.getElementById("button_5"),
-  ];
-
-  buttonsArray.forEach((button) => {
-    button.style.display = "none";
+layouts.forEach((layout) => {
+  cardData.forEach((card) => {
+    const cardHtml = cardComponent(card);
+    layout.insertAdjacentHTML("beforeend", cardHtml);
   });
-
-  const cardsArray = [
-    document.getElementById("card_0"),
-    document.getElementById("card_1"),
-    document.getElementById("card_2"),
-    document.getElementById("card_3"),
-    document.getElementById("card_4"),
-    document.getElementById("card_5"),
-  ];
-
-  const componentGrid = document.querySelector(".component_two_box");
-
-  // Hover
-
-  function handleCardHover() {
-    buttonsArray[0].style.display = "block";
-   
-  }
-  function handleCardHover1() {
-    buttonsArray[1].style.display = "block";
-   
-  }
-  function handleCardHover2() {
-    buttonsArray[2].style.display = "block";
-
-  }
-  function handleCardHover3() {
-    buttonsArray[3].style.display = "block";
- 
-  }
-  function handleCardHover4() {
-    buttonsArray[4].style.display = "block";
-  
-  }
-  function handleCardHover5() {
-    buttonsArray[5].style.display = "block";
-  }
-
-  // Hover out
-
-  function handleCardHoverOut() {
-    buttonsArray[0].style.display = "none";
-  }
-  function handleCardHoverOut1() {
-    buttonsArray[1].style.display = "none";
-  
-  }
-  function handleCardHoverOut2() {
-    buttonsArray[2].style.display = "none";
- 
-  }
-  function handleCardHoverOut3() {
-    buttonsArray[3].style.display = "none";
-  
-  }
-  function handleCardHoverOut4() {
-    buttonsArray[4].style.display = "none";
-    
-  }
-  function handleCardHoverOut5() {
-    buttonsArray[5].style.display = "none";
-    
-  }
-
-  cardsArray[0].addEventListener("mouseover", handleCardHover);
-  cardsArray[0].addEventListener("mouseout", handleCardHoverOut);
-  cardsArray[1].addEventListener("mouseover", handleCardHover1);
-  cardsArray[1].addEventListener("mouseout", handleCardHoverOut1);
-  cardsArray[2].addEventListener("mouseover", handleCardHover2);
-  cardsArray[2].addEventListener("mouseout", handleCardHoverOut2);
-  cardsArray[3].addEventListener("mouseover", handleCardHover3);
-  cardsArray[3].addEventListener("mouseout", handleCardHoverOut3);
-  cardsArray[4].addEventListener("mouseover", handleCardHover4);
-  cardsArray[4].addEventListener("mouseout", handleCardHoverOut4);
-  cardsArray[5].addEventListener("mouseover", handleCardHover5);
-  cardsArray[5].addEventListener("mouseout", handleCardHoverOut5);
 });
+
+cardComponent();
+
+// ------------------------------------------------------------------------
+
+const data = [
+  {
+    title: "Keeping track of hundreds  of components website",
+    closeImg: "./src/icon/close.png",
+    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+    img: "./src/Img/Snapshoot Portfolio.png",
+    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    buttonOne: "./src/icon/Icon-see live.png",
+    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonId: 0,
+    buttons: 0,
+  },
+  {
+    title: "Keeping track of hundreds  of components website",
+    closeImg: "./src/icon/close.png",
+    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+    img: "./src/Img/Snapshoot Portfolio.png",
+    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    buttonOne: "./src/icon/Icon-see live.png",
+    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonId: 0,
+    buttons: 0,
+  },
+  {
+    title: "Keeping track of hundreds  of components website",
+    closeImg: "./src/icon/close.png",
+    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+    img: "./src/Img/Snapshoot Portfolio.png",
+    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    buttonOne: "./src/icon/Icon-see live.png",
+    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonId: 0,
+    buttons: 0,
+  },
+  {
+    title: "Keeping track of hundreds  of components website",
+    closeImg: "./src/icon/close.png",
+    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+    img: "./src/Img/Snapshoot Portfolio.png",
+    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    buttonOne: "./src/icon/Icon-see live.png",
+    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonId: 0,
+    buttons: 0,
+  },
+  {
+    title: "Keeping track of hundreds  of components website",
+    closeImg: "./src/icon/close.png",
+    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+    img: "./src/Img/Snapshoot Portfolio.png",
+    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    buttonOne: "./src/icon/Icon-see live.png",
+    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonId: 0,
+    buttons: 0,
+  },
+  {
+    title: "Keeping track of hundreds  of components website",
+    closeImg: "./src/icon/close.png",
+    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+    img: "./src/Img/Snapshoot Portfolio.png",
+    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    buttonOne: "./src/icon/Icon-see live.png",
+    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonId: 0,
+    buttons: 0,
+  },
+];
+
+
+function componentTwo(data) {
+  const { title, closeImg, technologies, img, info, buttonOne, buttonTwo } = data;
+
+  return `
+    <div class="popupSubContainer">
+      <div class="popupInfo">
+        <div class="popupTitle">
+          <h2>${title}</h2>
+          <img class="closeImgs" id="closePopupBtn" src="${closeImg}" alt="">
+        </div>
+        <ul>
+          ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
+        </ul>
+      </div>
+      <div class="popupDetails">
+        <div class="popupImg">
+          <img src="${img}" alt="">
+        </div>
+        <div class="popupMainInfo">
+          <div class="popupP">
+            <p>${info.replace(/\n/g, "<br>")}</p>
+          </div>
+          <div class="popupButtons">
+            <a class="live" href="">See live<img src="${buttonOne}" alt=""></a>
+            <a class="see" href="">See source<img src="${buttonTwo}" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+const popupWindows = document.querySelectorAll(".popup");
+
+popupWindows.forEach((popup, index) => {
+  const popupWin = componentTwo(data[index]);
+  popup.insertAdjacentHTML("beforeend", popupWin);
+});
+
+componentTwo()
+
+
+
+// =====================================================
+
+// const buttonCards = document.querySelectorAll(".buttonCards");
+
+// function openPopupCard() {
+//   popupWindown.style.display = "block";
+//   popupWindown.style.display = "flex";
+//   popupWindown.style.justifyContent = "center";
+//   popupWindown.style.alignItems = "center";
+// }
+
+// function closePopupCard() {
+//   popupWindown.style.display = "none";
+//   bodyMainBox.style.overflow = "auto";
+// }
+
+// // Add click event listeners to each button in the NodeList
+// buttonCards.forEach((button) => {
+//   button.addEventListener("click", openPopupCard);
+// });

@@ -138,3 +138,92 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
 });
+const buttonsArray = [
+  document.getElementById("button_0"),
+  document.getElementById("button_1"),
+  document.getElementById("button_2"),
+  document.getElementById("button_3"),
+  document.getElementById("button_4"),
+  document.getElementById("button_5"),
+];
+
+buttonsArray.forEach((button) => {
+  button.style.display = "none";
+});
+
+const cardsArray = [
+  document.getElementById("card_0"),
+  document.getElementById("card_1"),
+  document.getElementById("card_2"),
+  document.getElementById("card_3"),
+  document.getElementById("card_4"),
+  document.getElementById("card_5"),
+];
+
+const componentGrid = document.querySelector(".component_two_box");
+
+// Hover
+
+function handleCardHover() {
+  buttonsArray[0].style.display = "block";
+ 
+}
+function handleCardHover1() {
+  buttonsArray[1].style.display = "block";
+ 
+}
+function handleCardHover2() {
+  buttonsArray[2].style.display = "block";
+
+}
+function handleCardHover3() {
+  buttonsArray[3].style.display = "block";
+
+}
+function handleCardHover4() {
+  buttonsArray[4].style.display = "block";
+
+}
+function handleCardHover5() {
+  buttonsArray[5].style.display = "block";
+}
+
+// Hover out
+
+function handleCardHoverOut() {
+  buttonsArray[0].style.display = "none";
+}
+function handleCardHoverOut1() {
+  buttonsArray[1].style.display = "none";
+
+}
+function handleCardHoverOut2() {
+  buttonsArray[2].style.display = "none";
+
+}
+function handleCardHoverOut3() {
+  buttonsArray[3].style.display = "none";
+
+}
+function handleCardHoverOut4() {
+  buttonsArray[4].style.display = "none";
+  
+}
+function handleCardHoverOut5() {
+  buttonsArray[5].style.display = "none";
+  
+}
+
+cardsArray[0].addEventListener("mouseover", handleCardHover);
+cardsArray[0].addEventListener("mouseout", handleCardHoverOut);
+cardsArray[1].addEventListener("mouseover", handleCardHover1);
+cardsArray[1].addEventListener("mouseout", handleCardHoverOut1);
+cardsArray[2].addEventListener("mouseover", handleCardHover2);
+cardsArray[2].addEventListener("mouseout", handleCardHoverOut2);
+cardsArray[3].addEventListener("mouseover", handleCardHover3);
+cardsArray[3].addEventListener("mouseout", handleCardHoverOut3);
+cardsArray[4].addEventListener("mouseover", handleCardHover4);
+cardsArray[4].addEventListener("mouseout", handleCardHoverOut4);
+cardsArray[5].addEventListener("mouseover", handleCardHover5);
+cardsArray[5].addEventListener("mouseout", handleCardHoverOut5);
+};
