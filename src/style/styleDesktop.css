@@ -793,6 +793,7 @@
 
   }
 
+  
   @media screen  and (min-width: 768px) and (max-width: 1200px){
     .popup {
       width: 100%;
@@ -817,8 +818,6 @@
       border-radius: 5px;
       gap: 2rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-     
-  
     }
   
     .popupInfo {
@@ -879,7 +878,6 @@
     .popupImg {
       width: auto;
       overflow: hidden;
-      height: 100%;
     }
   
     .popupImg img {
@@ -1032,6 +1030,7 @@
       max-height: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 450px;
       gap: 2rem;
     }
   
@@ -1056,14 +1055,14 @@
   
     .popupP {
       width: 100%;
-      font-size: 2.1vh;
       height: 100%;
+      overflow-y: scroll;
      
     }
   
     .popupP p {
       font-family: 'Inter', sans-serif;
-      font-size: 100%;
+      font-size: 1.3rem;
       font-weight: 400;
       line-height: 30px;
       width: 100%;
@@ -1073,7 +1072,7 @@
   
   
     }
-  
+
     .popupButtons {
       width: 100%;
       display: flex;

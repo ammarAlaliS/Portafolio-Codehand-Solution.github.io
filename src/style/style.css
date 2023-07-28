@@ -21,8 +21,6 @@
     display: flex;
     justify-content: center;
     background-color: #3c3a39;
-    position: fixed;
-    z-index: 1;
   }
 
   .navbarDiv {
@@ -101,12 +99,7 @@
   /* Mobile menu */
   .menu {
     width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
     background-color: #3c3a39;
-    z-index: 2;
     display: none;
   }
 
@@ -321,12 +314,7 @@
   .modalSeeProjectButton {
     position: absolute;
     bottom: 4px;
-    width: 100%;
-    height: auto;
     margin-top: 0.3rem;
-  }
-
-  .modalSeeProjectButton button {
     width: 100%;
     height: 48px;
     background-color: #ff6b00;
@@ -337,6 +325,7 @@
     line-height: 24px;
     font-weight: 600;
   }
+
 
   /* About me section */
   .aboutMeSection {
@@ -744,7 +733,7 @@
     color: #ff6b00;
   }
 
-  .modalSeeProjectButton button:hover {
+  .modalSeeProjectButton:hover {
     background-color: #fff5e1;
     border: 1px solid #ff6b00;
     color: #ff6b00;
@@ -766,4 +755,147 @@
   .desktop_designe {
     display: none;
   }
+
+  /* popup */
+
+  /* Estilos para el pop-up */
+.popup {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(40px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.popupSubContainer {
+  width: 87%;
+  height: 95%;
+  background-color: #EBECF0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 80%; 
+  gap: 0.5rem;
+  align-content: center;
+}
+
+.popupInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.closeImgs {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1.4rem;
+}
+
+.popupInfo h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #172B4D;
+  max-width: 90%;
+}
+
+.popupInfo ul {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.popupInfo li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 8px 10px;
+  border: 1px solid #979493;
+}
+
+.popupDetails {
+  display: grid;
+  grid-template-rows: 40% auto;
+  gap: 1rem;
+}
+
+.popupImg {
+  width: auto;
+  object-fit: cover;
+}
+
+.popupImg img {
+  width: 100%;
+  height: 100%; 
+}
+
+.popupMainInfo {
+  height: 76%;
+  overflow: auto;
+}
+
+.popupP {
+  height: auto;
+}
+
+.popupP p {
+  font-family: 'Inter', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  color: #344563;
+  padding-right: 10px
+}
+
+.popupButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.popupButtons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border-radius: 1px;
+  color: #FFFFFF;
+}
+
+.live {
+  width: auto;
+  height: auto;
+  padding: 12px 16px;
+  background-color: #FF6B00;
+}
+
+.see {
+  width: auto;
+  height: auto;
+  padding: 12px 12px;
+  background-color: #FF6B00;
+}
+
+  
 }

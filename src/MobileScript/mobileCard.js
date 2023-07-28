@@ -1,229 +1,195 @@
-document.addEventListener("DOMContentLoaded", function () {
-  function cards() {
-    const cardData = [
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 0,
-      },
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 1,
-      },
-      {
-        title: "Profesional Art <br> Printing Data More",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_4.png",
-        id: 2,
-      },
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 3,
-      },
-      {
-        title: "Profesional Art <br> Printing Data More",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_4.png",
-        id: 4,
-      },
-      {
-        title: "Website Portfolio",
-        info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        technologies: ["HTML", "Bootstrap", "Ruby"],
-        img: "./src/imgDesktop/Img Placeholder_3.png",
-        id: 5,
-      },
-    ];
+const PopupMobiledata = [
+  {
+    title: "Data Dashboard Healthcare",
+    closeImg: "./src/icon/close.png",
+    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+    img: "./src/imgDesktop/Img Placeholder_2.png",
+    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    buttonOne: "./src/icon/Icon-see live.png",
+    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+  },
+  // {
+  //   title: "Website Portfolio",
+  //   closeImg: "./src/icon/close.png",
+  //   technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+  //   img: "./src/imgDesktop/Img Placeholder_3.png",
+  //   info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  //   buttonOne: "./src/icon/Icon-see live.png",
+  //   buttonTwo: "./src/icon/Icon -GitHub-white.png",
+  //   buttonId: 0,
+  //   buttons: 0,
+  // },
+  // {
+  //   title: "Profesional Art Printing Data More",
+  //   closeImg: "./src/icon/close.png",
+  //   technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+  //   img: "./src/imgDesktop/Img Placeholder_4.png",
+  //   info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  //   buttonOne: "./src/icon/Icon-see live.png",
+  //   buttonTwo: "./src/icon/Icon -GitHub-white.png",
+  //   buttonId: 0,
+  //   buttons: 0,
+  // },
+  // {
+  //   title: "Website Portfolio",
+  //   closeImg: "./src/icon/close.png",
+  //   technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+  //   img: "./src/imgDesktop/Img Placeholder_3.png",
+  //   info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  //   buttonOne: "./src/icon/Icon-see live.png",
+  //   buttonTwo: "./src/icon/Icon -GitHub-white.png",
+  //   buttonId: 0,
+  //   buttons: 0,
+  // },
+  // {
+  //   title: "Data Dashboard Healthcare",
+  //   closeImg: "./src/icon/close.png",
+  //   technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+  //   img: "./src/imgDesktop/Img Placeholder_2.png",
+  //   info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  //   buttonOne: "./src/icon/Icon-see live.png",
+  //   buttonTwo: "./src/icon/Icon -GitHub-white.png",
+  //   buttonId: 0,
+  //   buttons: 0,
+  // },
+  // {
+  //   title: "Profesional Art Printing Data More",
+  //   closeImg: "./src/icon/close.png",
+  //   technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+  //   img: "./src/imgDesktop/Img Placeholder_4.png",
+  //   info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  //   buttonOne: "./src/icon/Icon-see live.png",
+  //   buttonTwo: "./src/icon/Icon -GitHub-white.png",
+  //   buttonId: 0,
+  //   buttons: 0,
+  // },
+];
 
-    const cardDataOne = [
-      {
-        imgs: "./src/imgDesktop/Img Placeholder.png",
-        button: "See project",
-        id: 0,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_2.png",
-        button: "View project",
-        id: 1,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_3.png",
-        button: "Check it out",
-        id: 2,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_4.png",
-        button: "Explore",
-        id: 3,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_3.png",
-        button: "Check it out",
-        id: 4,
-      },
-      {
-        imgs: "./src/imgDesktop/Img Placeholder_4.png",
-        button: "Explore",
-        id: 5,
-      },
-    ];
+function componentTwo(PopupMobiledata) {
+  const { title, closeImg, technologies, img, info, buttonOne, buttonTwo } =
+    PopupMobiledata;
 
-    const layout = document.querySelector(".modalmainbox");
-    const combinedData = cardData.map((data, index) => ({
-      ...data,
-      ...cardDataOne[index],
-    }));
-    const cardHTML = combinedData.map(cardComponent).join("");
-    layout.innerHTML = cardHTML;
-  }
-
-  function cardComponent(componentData) {
-    const { title, info, technologies, img, button, id } = componentData;
-
-    return `
-      <div class="modelminbox">
-            <div class="modalPicture">
-                <img src="${img}" alt="modelPicture">
-                <div class="boxModalInfomartions">
-                    <div class="boxModalInfomartion_title">
-                        <h2>${title}</h2>
-                    </div>
-                    <div class="boxModalInfomartion_p">
-                        <p>${info}</p>
-                    </div>
-                    <ul class="modalTecnologies">
-                    ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
-                    </ul>
-                </div>
-                <div class="modalSeeProjectButton">
-                    <button>${button}</button>
-                </div>
-            </div>
+  return `
+    <div class="popupSubContainer">
+      <div class="popupInfo">
+        <div class="popupTitle">
+          <h2>${title}</h2>
+          <img class="closeImgs" id="closePopupBtn" src="${closeImg}" alt="">
         </div>
-      `;
-  }
+        <ul>
+          ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
+        </ul>
+      </div>
+      <div class="popupDetails">
+        <div class="popupImg">
+          <img src="${img}" alt="">
+        </div>
+        <div class="popupMainInfo">
+          <div class="popupP">
+            <p>${info.replace(/\n/g, "<br>")}</p>
+          </div>
+        </div>
+      </div>
+      <div class="popupButtons">
+         <a class="live" href="">See live<img src="${buttonOne}" alt=""></a>
+         <a class="see" href="">See source<img src="${buttonTwo}" alt=""></a>
+      </div>
+    </div>
+  `;
+}
 
-  cards();
+const MobilePopupWindow = document.querySelector("#MobilePopupWindow");
 
-  const buttonsArray = [
-    document.getElementById("button_0"),
-    document.getElementById("button_1"),
-    document.getElementById("button_2"),
-    document.getElementById("button_3"),
-    document.getElementById("button_4"),
-    document.getElementById("button_5"),
-  ];
-
-  buttonsArray.forEach((button) => {
-  });
-
-  const cardsArray = [
-    document.getElementById("card_0"),
-    document.getElementById("card_1"),
-    document.getElementById("card_2"),
-    document.getElementById("card_3"),
-    document.getElementById("card_4"),
-    document.getElementById("card_5"),
-  ];
-
-  
-});
-const buttonsArray = [
-  document.getElementById("button_0"),
-  document.getElementById("button_1"),
-  document.getElementById("button_2"),
-  document.getElementById("button_3"),
-  document.getElementById("button_4"),
-  document.getElementById("button_5"),
-];
-
-buttonsArray.forEach((button) => {
-  button.style.display = "none";
+PopupMobiledata.forEach((popupData) => {
+  const popupHtml = componentTwo(popupData);
+  MobilePopupWindow.insertAdjacentHTML("beforeend", popupHtml);
 });
 
-const cardsArray = [
-  document.getElementById("card_0"),
-  document.getElementById("card_1"),
-  document.getElementById("card_2"),
-  document.getElementById("card_3"),
-  document.getElementById("card_4"),
-  document.getElementById("card_5"),
-];
+MobilePopupWindow.style.display = "block";
+MobilePopupWindow.style.display = "flex";
+MobilePopupWindow.style.justifyContent = "center";
+MobilePopupWindow.style.alignItems = "center";
 
-const componentGrid = document.querySelector(".component_two_box");
+// =============================================================
+// const MobileCardData = [
+//   {
+//     title: "Data Dashboard Healthcare",
+//     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+//     technologies: ["HTML", "Bootstrap", "Ruby"],
+//     img: "./src/imgDesktop/Img Placeholder_2.png",
+//     button: "See project",
+//     id: 0,
+//   },
+//   {
+//     title: "Website Portfolio",
+//     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+//     technologies: ["HTML", "Bootstrap", "Ruby"],
+//     img: "./src/imgDesktop/Img Placeholder_3.png",
+//     button: "See project",
+//     id: 1,
+//   },
+//   {
+//     title: "Profesional Art <br> Printing Data More",
+//     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+//     technologies: ["HTML", "Bootstrap", "Ruby"],
+//     img: "./src/imgDesktop/Img Placeholder_4.png",
+//     button: "See project",
+//     id: 2,
+//   },
+//   {
+//     title: "Website Portfolio",
+//     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+//     technologies: ["HTML", "Bootstrap", "Ruby"],
+//     img: "./src/imgDesktop/Img Placeholder_3.png",
+//     button: "See project",
+//     id: 3,
+//   },
+//   {
+//     title: "Data Dashboard Healthcare",
+//     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+//     technologies: ["HTML", "Bootstrap", "Ruby"],
+//     img: "./src/imgDesktop/Img Placeholder_2.png",
+//     button: "See project",
+//     id: 4,
+//   },
+//   {
+//     title: "Profesional Art <br> Printing Data More",
+//     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+//     technologies: ["HTML", "Bootstrap", "Ruby"],
+//     img: "./src/imgDesktop/Img Placeholder_4.png",
+//     button: "See project",
+//     id: 5,
+//   },
+// ];
 
-// Hover
+// function cardComponent(cardData) {
+//   const { title, info, technologies, img, id, button } = cardData;
 
-function handleCardHover() {
-  buttonsArray[0].style.display = "block";
- 
-}
-function handleCardHover1() {
-  buttonsArray[1].style.display = "block";
- 
-}
-function handleCardHover2() {
-  buttonsArray[2].style.display = "block";
+//   return `
+//     <div class="modelminbox" id="card_${id}">
+//       <div class="modalPicture">
+//           <img src="${img}" alt="modelPicture">
+//           <div class="boxModalInfomartions">
+//               <div class="boxModalInfomartion_title">
+//                   <h2>${title}</h2>
+//               </div>
+//               <div class="boxModalInfomartion_p">
+//                   <p>${info}</p>
+//               </div>
+//               <ul class="modalTecnologies">
+//               ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
+//               </ul>
+//           </div>
+//           <div class="componet_one_button">
+//             <button class="modalSeeProjectButton" data-index="${id}">${button}</button>
+//         </div>
+//       </div>
+//     </div>
+//   `;
+// }
 
-}
-function handleCardHover3() {
-  buttonsArray[3].style.display = "block";
-
-}
-function handleCardHover4() {
-  buttonsArray[4].style.display = "block";
-
-}
-function handleCardHover5() {
-  buttonsArray[5].style.display = "block";
-}
-
-// Hover out
-
-function handleCardHoverOut() {
-  buttonsArray[0].style.display = "none";
-}
-function handleCardHoverOut1() {
-  buttonsArray[1].style.display = "none";
-
-}
-function handleCardHoverOut2() {
-  buttonsArray[2].style.display = "none";
-
-}
-function handleCardHoverOut3() {
-  buttonsArray[3].style.display = "none";
-
-}
-function handleCardHoverOut4() {
-  buttonsArray[4].style.display = "none";
-  
-}
-function handleCardHoverOut5() {
-  buttonsArray[5].style.display = "none";
-  
-}
-
-cardsArray[0].addEventListener("mouseover", handleCardHover);
-cardsArray[0].addEventListener("mouseout", handleCardHoverOut);
-cardsArray[1].addEventListener("mouseover", handleCardHover1);
-cardsArray[1].addEventListener("mouseout", handleCardHoverOut1);
-cardsArray[2].addEventListener("mouseover", handleCardHover2);
-cardsArray[2].addEventListener("mouseout", handleCardHoverOut2);
-cardsArray[3].addEventListener("mouseover", handleCardHover3);
-cardsArray[3].addEventListener("mouseout", handleCardHoverOut3);
-cardsArray[4].addEventListener("mouseover", handleCardHover4);
-cardsArray[4].addEventListener("mouseout", handleCardHoverOut4);
-cardsArray[5].addEventListener("mouseover", handleCardHover5);
-cardsArray[5].addEventListener("mouseout", handleCardHoverOut5);
-};
+// const modalmainbox = document.querySelector(".modalmainbox");
+// MobileCardData.forEach((card) => {
+//   const cardHtml = cardComponent(card);
+//   modalmainbox.insertAdjacentHTML("beforeend", cardHtml);
+// });
