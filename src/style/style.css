@@ -781,17 +781,15 @@
 
   .popupSubContainer {
     width: 87%;
-    height: 95%;
+    max-height: 90%;
     background-color: #ebecf0;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
-    display: grid;
-    grid-template-rows: 1fr 80%;
     gap: 0.5rem;
     align-content: center;
-    margin: auto auto;
+    overflow-y: auto;
   }
 
   .popupInfo {
@@ -799,6 +797,7 @@
     flex-direction: column;
     gap: 1em;
     width: 100%;
+    height: auto;
   }
 
   .closeImgs {
@@ -807,7 +806,7 @@
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    top: 1.4rem;
+    top: 1.5rem;
   }
 
   .popupInfo h2 {
@@ -823,6 +822,7 @@
     display: flex;
     gap: 0.8rem;
     flex-wrap: wrap;
+    margin-top: 1rem;
   }
 
   .popupInfo li {
@@ -835,13 +835,15 @@
 
   .popupDetails {
     display: grid;
-    grid-template-rows: 40% auto;
+    grid-template-rows: auto auto;
     gap: 1rem;
+    margin-top: 1rem;
   }
 
   .popupImg {
     width: auto;
     object-fit: cover;
+    height: 250px;
   }
 
   .popupImg img {
@@ -850,8 +852,7 @@
   }
 
   .popupMainInfo {
-    height: 76%;
-    overflow: auto;
+    height: 100%;
   }
 
   .popupP {
@@ -860,12 +861,11 @@
 
   .popupP p {
     font-family: 'Inter', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     width: 100%;
     color: #344563;
-    padding-right: 10px;
   }
 
   .popupButtons {
@@ -874,10 +874,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
+    margin-top: 0.5rem;
   }
 
   .popupButtons a {

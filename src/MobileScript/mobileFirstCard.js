@@ -44,7 +44,7 @@
       closeImg: './src/icon/close.png',
       technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
       img: './src/Img/Snapshoot Portfolio.png',
-      info: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de texto y la mezcló para hacer un libro de muestras tipográficas. <br><br> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de texto y la mezcló para hacer un libro de muestras tipográficas con la mapora relax verita.',
+      info: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de texto y la mezcló para hacer un libro de muestras tipográficas. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de texto y la mezcló para hacer un libro de muestras tipográficas con la mapora relax verita.',
       buttonOne: './src/icon/Icon-see live.png',
       buttonTwo: './src/icon/Icon -GitHub-white.png',
     },

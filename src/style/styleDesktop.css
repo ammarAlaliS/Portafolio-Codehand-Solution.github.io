@@ -366,6 +366,7 @@
     align-content: end;
     grid-template-rows: min-content min-content min-content;
     gap: 1rem;
+    margin-bottom: 4rem;
   }
 
   .component_two_title {
@@ -699,6 +700,12 @@
     color: #fff;
   }
 
+  .popupButtons a:hover {
+    background-color: #e05304;
+    border: 1px solid #ff6b00;
+    color: #fff;
+  }
+
   @media screen and (min-width: 1000px) {
     .modalComponent__info {
       display: grid;
@@ -800,7 +807,7 @@
     .popupSubContainer {
       width: 70%;
       height: 80%;
-      background-color: #ebecf0;
+      background-color: #fff;
       padding: 3rem 2rem;
       display: flex;
       flex-direction: column;
@@ -950,7 +957,7 @@
     .popupSubContainer {
       width: 80%;
       height: auto;
-      background-color: #ebecf0;
+      background-color: #fff;
       padding: 2rem 2rem;
       display: flex;
       flex-direction: column;
@@ -1076,14 +1083,14 @@
       width: auto;
       height: auto;
       padding: 16px 12px;
-      background-color: #e05304;
+      background-color: #ff6b00;
     }
 
     .see {
       width: auto;
       height: auto;
       padding: 16px 12px;
-      background-color: #e05304;
+      background-color: #ff6b00;
     }
   }
 
