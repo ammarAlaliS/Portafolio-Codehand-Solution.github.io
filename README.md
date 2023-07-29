@@ -135,7 +135,6 @@ Github page deployment. live vertion: https://ammaralalis.github.io/Portafolio-C
 👤 **Author1**
 
 - GitHub: [@WalidAmmarAli](https://github.com/WalidAmmarAli)
-- Twitter: [@AmmarAli3111]()
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ammar-ali-384625262/)
 
 
