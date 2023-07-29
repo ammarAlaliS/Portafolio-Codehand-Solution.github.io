@@ -81,12 +81,12 @@ function renderProjectPopup(data) {
 }
 
 function openPopup() {
-  const popupContainer = document.getElementById("popupWindown");
+  const popupContainer = document.querySelector(".popup"); 
   const projectPopupHTML = renderProjectPopup(dataFirstCard[0]);
   popupContainer.innerHTML = projectPopupHTML;
-  popupContainer.style.display = "block";
-  popupContainer.style.justifyContent = "center";
-  popupContainer.style.alignItems = "center";
+  popupContainer.style.display = "flex"; 
+  popupContainer.style.justifyContent = "center"; 
+  popupContainer.style.alignItems = "center"; 
   bodyMainBox.style.overflow = "hidden"; 
 }
 
@@ -99,5 +99,3 @@ function closePopup() {
 const buttonSee = document.getElementById("buttonSee");
 buttonSee.addEventListener("click", openPopup);
 
-const closePopupBtn = document.getElementById("closePopupBtn");
-closePopupBtn.addEventListener("click", closePopup);
