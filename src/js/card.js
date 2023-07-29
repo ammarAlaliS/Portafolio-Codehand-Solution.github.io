@@ -209,15 +209,14 @@ document.addEventListener("click", function (event) {
   }
 });
 
-function closePopup() {
+function closeDesktopPopup() {
   popupWindown.style.display = "none";
   bodyMainBox.style.overflow = "auto"
 }
 
 
-popupWindown.addEventListener('click', function(event) {
-  if (event.target.id === "closePopupBtn") {
-    closePopup();
+popupWindows.addEventListener("click", function (event) {
+  if (event.target.classList.contains("closeImgs")) {
+    closeDesktopPopup();
   }
 });
-
