@@ -342,7 +342,6 @@
   }
 
   /* componenet two */
-  
 
   .component_two_img {
     width: 100%;
@@ -367,7 +366,6 @@
     align-content: end;
     grid-template-rows: min-content min-content min-content;
     gap: 1rem;
-    
   }
 
   .component_two_title {
@@ -408,7 +406,7 @@
 
   /* POPUP style */
 
-  
+
 
   /* about myself secction */
   .aboutMeSection {
@@ -789,12 +787,9 @@
       font-weight: 600;
       border-radius: 5px;
     }
-
-
   }
 
-  
-  @media screen  and (min-width: 768px) and (max-width: 1000px){
+  @media screen  and (min-width: 768px) and (max-width: 1000px) {
     .popup {
       width: 100%;
       height: 100%;
@@ -805,12 +800,12 @@
       bottom: 0;
       display: none;
     }
-  
+
     .popupSubContainer {
       width: 70%;
       height: 80%;
-      background-color: #EBECF0;
-      padding: 3rem 2rem; 
+      background-color: #ebecf0;
+      padding: 3rem 2rem;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -819,45 +814,42 @@
       gap: 2rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
-  
+
     .popupInfo {
       display: flex;
       flex-direction: column;
       gap: 1em;
       width: 100%;
     }
-  
+
     .popupTitle {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-  
-    .closeImgs{
+
+    .closeImgs {
       width: 1.1rem;
       height: 1.1rem;
       cursor: pointer;
       margin-top: 0.5rem;
     }
-  
+
     .popupInfo h2 {
       font-family: 'Crete Round', serif;
       font-size: 35px;
-      font-weight: 400;
       line-height: 44px;
-      color: #172B4D;
+      color: #172b4d;
       font-weight: 600;
       max-width: 90%;
-  
     }
-  
+
     .popupInfo ul {
       list-style: none;
       display: flex;
       gap: 0.8rem;
-  
     }
-  
+
     .popupInfo li {
       font-family: 'Poppins', sans-serif;
       font-size: 1.1rem;
@@ -866,7 +858,7 @@
       padding: 12px 12px 12px 12px;
       border: 1px solid #979493;
     }
-  
+
     .popupDetails {
       width: 100%;
       height: 80%;
@@ -874,32 +866,31 @@
       grid-template-rows: auto 50%;
       gap: 2rem;
     }
-  
+
     .popupImg {
       width: auto;
       overflow: hidden;
     }
-  
+
     .popupImg img {
       width: 100%;
       height: 100%;
     }
-  
+
     .popupMainInfo {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 1.5rem;
-  
     }
-  
+
     .popupP {
       width: 100%;
       font-size: 2.1vh;
       height: 100%;
       overflow: scroll;
     }
-  
+
     .popupP p {
       font-family: 'Inter', sans-serif;
       font-size: 100%;
@@ -909,18 +900,15 @@
       margin: 0;
       padding: 0;
       color: #344563;
-  
-  
     }
-  
+
     .popupButtons {
       width: 100%;
       display: flex;
       align-items: center;
       gap: 1rem;
-  
     }
-  
+
     .popupButtons a {
       display: flex;
       justify-content: center;
@@ -933,16 +921,16 @@
       letter-spacing: 0.03em;
       text-decoration: none;
       border-radius: 5px;
-      color: #FFFFFF;
+      color: #fff;
     }
-  
+
     .live {
       width: auto;
       height: auto;
       padding: 16px 12px;
       background-color: #e05304;
     }
-  
+
     .see {
       width: auto;
       height: auto;
@@ -950,6 +938,7 @@
       background-color: #e05304;
     }
   }
+
   @media screen  and (min-width: 1000px) {
     .popup {
       width: 100%;
@@ -961,12 +950,12 @@
       bottom: 0;
       display: none;
     }
-  
+
     .popupSubContainer {
       width: 80%;
       height: auto;
-      background-color: #EBECF0;
-      padding: 2rem 2rem; 
+      background-color: #ebecf0;
+      padding: 2rem 2rem;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -975,47 +964,43 @@
       gap: 1.5rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       margin: auto;
-     
     }
-  
+
     .popupInfo {
       display: flex;
       flex-direction: column;
       gap: 1em;
       width: 100%;
     }
-  
+
     .popupTitle {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-  
-    .closeImgs{
+
+    .closeImgs {
       width: 1.1rem;
       height: 1.1rem;
       cursor: pointer;
       margin-top: 0.5rem;
     }
-  
+
     .popupInfo h2 {
       font-family: 'Crete Round', serif;
       font-size: 45px;
-      font-weight: 400;
       line-height: 44px;
-      color: #172B4D;
+      color: #172b4d;
       font-weight: 600;
       max-width: 90%;
-  
     }
-  
+
     .popupInfo ul {
       list-style: none;
       display: flex;
       gap: 0.8rem;
-  
     }
-  
+
     .popupInfo li {
       font-family: 'Poppins', sans-serif;
       font-size: 1.1rem;
@@ -1024,7 +1009,7 @@
       padding: 12px 12px 12px 12px;
       border: 1px solid #979493;
     }
-  
+
     .popupDetails {
       width: 100%;
       max-height: 100%;
@@ -1033,33 +1018,31 @@
       grid-template-rows: 450px;
       gap: 2rem;
     }
-  
+
     .popupImg {
       width: auto;
       overflow: hidden;
       height: 100%;
     }
-  
+
     .popupImg img {
       width: 100%;
       height: 100%;
     }
-  
+
     .popupMainInfo {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 1.5rem;
-  
     }
-  
+
     .popupP {
       width: 100%;
       height: 100%;
       overflow-y: scroll;
-     
     }
-  
+
     .popupP p {
       font-family: 'Inter', sans-serif;
       font-size: 1.3rem;
@@ -1069,8 +1052,6 @@
       margin: 0;
       padding: 0;
       color: #344563;
-  
-  
     }
 
     .popupButtons {
@@ -1078,9 +1059,8 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-  
     }
-  
+
     .popupButtons a {
       display: flex;
       justify-content: center;
@@ -1093,16 +1073,16 @@
       letter-spacing: 0.03em;
       text-decoration: none;
       border-radius: 5px;
-      color: #FFFFFF;
+      color: #fff;
     }
-  
+
     .live {
       width: auto;
       height: auto;
       padding: 16px 12px;
       background-color: #e05304;
     }
-  
+
     .see {
       width: auto;
       height: auto;
@@ -1110,6 +1090,7 @@
       background-color: #e05304;
     }
   }
+
   @media screen and (min-width: 1200px) {
     .layout {
       width: 100%;
@@ -1154,14 +1135,11 @@
       font-family: 'Crete Round', serif;
     }
   }
+
   @media screen and (min-width: 1550px) {
     .popupP p {
- 
       font-size: 1.4rem;
       line-height: 40px;
     }
   }
-
-
-
 }

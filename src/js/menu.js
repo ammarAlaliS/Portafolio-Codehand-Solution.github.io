@@ -5,7 +5,6 @@ const linksMenu = document.querySelectorAll('.linksMenu');
 function openMenu() {
   menuContainer.style.display = 'block';
   document.body.style.overflow = 'hidden';
-  console.log('is working')
 }
 function closeMenu() {
   menuContainer.style.display = 'none';

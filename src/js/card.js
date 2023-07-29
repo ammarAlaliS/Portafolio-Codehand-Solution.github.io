@@ -1,75 +1,76 @@
 const data = [
   {
-    title: "Data Dashboard Healthcare",
-    closeImg: "./src/icon/close.png",
-    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
-    img: "./src/imgDesktop/Img Placeholder_2.png",
+    title: 'Data Dashboard Healthcare',
+    closeImg: './src/icon/close.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    img: './src/imgDesktop/Img Placeholder_2.png',
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    buttonOne: "./src/icon/Icon-see live.png",
-    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonOne: './src/icon/Icon-see live.png',
+    buttonTwo: './src/icon/Icon -GitHub-white.png',
     buttonId: 0,
     buttons: 0,
   },
   {
-    title: "Website Portfolio",
-    closeImg: "./src/icon/close.png",
-    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
-    img: "./src/imgDesktop/Img Placeholder_3.png",
+    title: 'Website Portfolio',
+    closeImg: './src/icon/close.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    img: './src/imgDesktop/Img Placeholder_3.png',
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    buttonOne: "./src/icon/Icon-see live.png",
-    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonOne: './src/icon/Icon-see live.png',
+    buttonTwo: './src/icon/Icon -GitHub-white.png',
     buttonId: 0,
     buttons: 0,
   },
   {
-    title: "Profesional Art Printing Data More",
-    closeImg: "./src/icon/close.png",
-    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
-    img: "./src/imgDesktop/Img Placeholder_4.png",
+    title: 'Profesional Art Printing Data More',
+    closeImg: './src/icon/close.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    img: './src/imgDesktop/Img Placeholder_4.png',
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    buttonOne: "./src/icon/Icon-see live.png",
-    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonOne: './src/icon/Icon-see live.png',
+    buttonTwo: './src/icon/Icon -GitHub-white.png',
     buttonId: 0,
     buttons: 0,
   },
   {
-    title: "Website Portfolio",
-    closeImg: "./src/icon/close.png",
-    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
-    img: "./src/imgDesktop/Img Placeholder_3.png",
+    title: 'Website Portfolio',
+    closeImg: './src/icon/close.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    img: './src/imgDesktop/Img Placeholder_3.png',
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    buttonOne: "./src/icon/Icon-see live.png",
-    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonOne: './src/icon/Icon-see live.png',
+    buttonTwo: './src/icon/Icon -GitHub-white.png',
     buttonId: 0,
     buttons: 0,
   },
   {
-    title: "Data Dashboard Healthcare",
-    closeImg: "./src/icon/close.png",
-    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
-    img: "./src/imgDesktop/Img Placeholder_2.png",
+    title: 'Data Dashboard Healthcare',
+    closeImg: './src/icon/close.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    img: './src/imgDesktop/Img Placeholder_2.png',
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    buttonOne: "./src/icon/Icon-see live.png",
-    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonOne: './src/icon/Icon-see live.png',
+    buttonTwo: './src/icon/Icon -GitHub-white.png',
     buttonId: 0,
     buttons: 0,
   },
   {
-    title: "Profesional Art Printing Data More",
-    closeImg: "./src/icon/close.png",
-    technologies: ["HTML", "Bootstrap", "Ruby on rails"],
-    img: "./src/imgDesktop/Img Placeholder_4.png",
+    title: 'Profesional Art Printing Data More',
+    closeImg: './src/icon/close.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    img: './src/imgDesktop/Img Placeholder_4.png',
     info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    buttonOne: "./src/icon/Icon-see live.png",
-    buttonTwo: "./src/icon/Icon -GitHub-white.png",
+    buttonOne: './src/icon/Icon-see live.png',
+    buttonTwo: './src/icon/Icon -GitHub-white.png',
     buttonId: 0,
     buttons: 0,
   },
 ];
 
 function componentTwo(data) {
-  const { title, closeImg, technologies, img, info, buttonOne, buttonTwo } =
-    data;
+  const {
+    title, closeImg, technologies, img, info, buttonOne, buttonTwo,
+  } = data;
 
   return `
     <div class="popupSubContainer">
@@ -79,7 +80,7 @@ function componentTwo(data) {
           <img class="closeImgs" id="closePopupBtn" src="${closeImg}" alt="">
         </div>
         <ul>
-          ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
+          ${technologies.map((tech) => `<li>${tech}</li>`).join('')}
         </ul>
       </div>
       <div class="popupDetails">
@@ -88,7 +89,7 @@ function componentTwo(data) {
         </div>
         <div class="popupMainInfo">
           <div class="popupP">
-            <p>${info.replace(/\n/g, "<br>")}</p>
+            <p>${info.replace(/\n/g, '<br>')}</p>
           </div>
           <div class="popupButtons">
             <a class="live" href="">See live<img src="${buttonOne}" alt=""></a>
@@ -100,73 +101,76 @@ function componentTwo(data) {
   `;
 }
 
-const popupWindows = document.querySelector("#popupWindown");
+const popupWindows = document.querySelector('#popupWindown');
+const bodyMainBox = document.getElementById('bodyMainBox');
 
 function openPopup(index) {
   const popupWin = componentTwo(data[index]);
   popupWindows.innerHTML = popupWin;
-  popupWindows.style.display = "block";
-  popupWindown.style.display = "flex";
-  popupWindown.style.justifyContent = "center";
-  popupWindown.style.alignItems = "center";
-  bodyMainBox.style.overflow = "hidden";
+  popupWindows.style.display = 'block';
+  popupWindows.style.display = 'flex';
+  popupWindows.style.justifyContent = 'center';
+  popupWindows.style.alignItems = 'center';
+  bodyMainBox.style.overflow = 'hidden';
 }
 
 // =========================================================
 
 const cardData = [
   {
-    title: "Data Dashboard Healthcare",
+    title: 'Data Dashboard Healthcare',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    technologies: ["HTML", "Bootstrap", "Ruby"],
-    img: "./src/imgDesktop/Img Placeholder_2.png",
-    button: "See project",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './src/imgDesktop/Img Placeholder_2.png',
+    button: 'See project',
     id: 0,
   },
   {
-    title: "Website Portfolio",
+    title: 'Website Portfolio',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    technologies: ["HTML", "Bootstrap", "Ruby"],
-    img: "./src/imgDesktop/Img Placeholder_3.png",
-    button: "See project",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './src/imgDesktop/Img Placeholder_3.png',
+    button: 'See project',
     id: 1,
   },
   {
-    title: "Profesional Art <br> Printing Data More",
+    title: 'Profesional Art <br> Printing Data More',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    technologies: ["HTML", "Bootstrap", "Ruby"],
-    img: "./src/imgDesktop/Img Placeholder_4.png",
-    button: "See project",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './src/imgDesktop/Img Placeholder_4.png',
+    button: 'See project',
     id: 2,
   },
   {
-    title: "Website Portfolio",
+    title: 'Website Portfolio',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    technologies: ["HTML", "Bootstrap", "Ruby"],
-    img: "./src/imgDesktop/Img Placeholder_3.png",
-    button: "See project",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './src/imgDesktop/Img Placeholder_3.png',
+    button: 'See project',
     id: 3,
   },
   {
-    title: "Data Dashboard Healthcare",
+    title: 'Data Dashboard Healthcare',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    technologies: ["HTML", "Bootstrap", "Ruby"],
-    img: "./src/imgDesktop/Img Placeholder_2.png",
-    button: "See project",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './src/imgDesktop/Img Placeholder_2.png',
+    button: 'See project',
     id: 4,
   },
   {
-    title: "Profesional Art <br> Printing Data More",
+    title: 'Profesional Art <br> Printing Data More',
     info: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    technologies: ["HTML", "Bootstrap", "Ruby"],
-    img: "./src/imgDesktop/Img Placeholder_4.png",
-    button: "See project",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    img: './src/imgDesktop/Img Placeholder_4.png',
+    button: 'See project',
     id: 5,
   },
 ];
 
 function cardComponent(cardData) {
-  const { title, info, technologies, img, button, id } = cardData;
+  const {
+    title, info, technologies, img, button, id,
+  } = cardData;
 
   return `
     <div class="component_two" id="card_${id}">
@@ -181,7 +185,7 @@ function cardComponent(cardData) {
               <p>${info}</p>
             </div>
             <ul class="component_two_tecnologies">
-              ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
+              ${technologies.map((tech) => `<li>${tech}</li>`).join('')}
             </ul>
           </div>
         </div>
@@ -193,30 +197,29 @@ function cardComponent(cardData) {
   `;
 }
 
-const layouts = document.querySelectorAll(".layout");
+const layouts = document.querySelectorAll('.layout');
 
 layouts.forEach((layout) => {
   cardData.forEach((card) => {
     const cardHtml = cardComponent(card);
-    layout.insertAdjacentHTML("beforeend", cardHtml);
+    layout.insertAdjacentHTML('beforeend', cardHtml);
   });
 });
 
-document.addEventListener("click", function (event) {
-  if (event.target.matches(".buttonCards")) {
-    const index = event.target.dataset.index;
+document.addEventListener('click', (event) => {
+  if (event.target.matches('.buttonCards')) {
+    const { index } = event.target.dataset;
     openPopup(index);
   }
 });
 
 function closeDesktopPopup() {
-  popupWindown.style.display = "none";
-  bodyMainBox.style.overflow = "auto"
+  popupWindows.style.display = 'none';
+  bodyMainBox.style.overflow = 'auto';
 }
 
-
-popupWindows.addEventListener("click", function (event) {
-  if (event.target.classList.contains("closeImgs")) {
+popupWindows.addEventListener('click', (event) => {
+  if (event.target.classList.contains('closeImgs')) {
     closeDesktopPopup();
   }
 });
