@@ -21,8 +21,6 @@
     display: flex;
     justify-content: center;
     background-color: #3c3a39;
-    position: fixed;
-    z-index: 1;
   }
 
   .navbarDiv {
@@ -36,6 +34,11 @@
     font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
+  }
+
+  .icon img {
+    width: 1.5rem;
+    height: 1.3rem;
   }
 
   .logoBox a {
@@ -175,7 +178,7 @@
 
   .modals {
     width: 100%;
-    height: 3550px;
+    height: 3500px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -187,11 +190,13 @@
     display: grid;
     grid-template-rows: auto auto;
     gap: 0.5rem;
+    width: 87%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .modalmainbox {
     width: 87%;
-    margin-top: 90px;
     overflow: hidden;
     display: grid;
     grid-template-rows: auto auto;
@@ -228,6 +233,7 @@
     display: flex;
     list-style: none;
     gap: 0.8rem;
+    flex-wrap: wrap;
   }
 
   .Tecnologies li {
@@ -318,12 +324,7 @@
   .modalSeeProjectButton {
     position: absolute;
     bottom: 4px;
-    width: 100%;
-    height: auto;
     margin-top: 0.3rem;
-  }
-
-  .modalSeeProjectButton button {
     width: 100%;
     height: 48px;
     background-color: #ff6b00;
@@ -741,7 +742,7 @@
     color: #ff6b00;
   }
 
-  .modalSeeProjectButton button:hover {
+  .modalSeeProjectButton:hover {
     background-color: #fff5e1;
     border: 1px solid #ff6b00;
     color: #ff6b00;
@@ -762,5 +763,146 @@
   /* Display none */
   .desktop_designe {
     display: none;
+  }
+
+  /* popup */
+
+  .popups {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 47, 137, 0.08);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+  }
+
+  .popupSubContainer {
+    width: 89%;
+    max-height: 90%;
+    background-color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    gap: 0.5rem;
+    align-content: center;
+    overflow-y: auto;
+  }
+
+  .popupInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: auto;
+  }
+
+  .closeImgs {
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1.6rem;
+  }
+
+  .popupInfo h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #172b4d;
+    max-width: 95%;
+  }
+
+  .popupInfo ul {
+    list-style: none;
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .popupInfo li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 8px 10px;
+    border: 1px solid #979493;
+  }
+
+  .popupDetails {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .popupImg {
+    width: auto;
+    object-fit: cover;
+    height: 250px;
+  }
+
+  .popupImg img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .popupMainInfo {
+    height: 100%;
+  }
+
+  .popupP {
+    height: auto;
+  }
+
+  .popupP p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    color: #344563;
+  }
+
+  .popupButtons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .popupButtons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    border-radius: 1px;
+    color: #fff;
+  }
+
+  .live {
+    width: auto;
+    height: auto;
+    padding: 12px 12px;
+    background-color: #ff6b00;
+  }
+
+  .see {
+    width: auto;
+    height: auto;
+    padding: 12px 12px;
+    background-color: #ff6b00;
   }
 }
