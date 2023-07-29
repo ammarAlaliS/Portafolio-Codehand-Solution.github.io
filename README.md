@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [See Live Demo](https://ammaralalis.github.io/Portafolio-Codehand-solution.github.io/)
+- [See Live Demo](https://ammaralalis.github.io/Portafolio-Codehand-Solution.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +124,7 @@ Run npx eslint . on the root of your directory of your project.
 
 ### Deployment
 
-Github page deployment. live vertion: https://ammaralalis.github.io/Portafolio-Codehand-solution.github.io/
+Github page deployment. live vertion: https://ammaralalis.github.io/Portafolio-Codehand-Solution.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
