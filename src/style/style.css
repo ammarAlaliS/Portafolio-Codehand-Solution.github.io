@@ -702,11 +702,13 @@
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 1rem;
   }
 
   .formButton button {
-    width: auto;
+    width: 150px;
     height: 48px;
     background-color: #ff6b00;
     padding: 12px;
@@ -904,5 +906,16 @@
     height: auto;
     padding: 12px 12px;
     background-color: #ff6b00;
+  }
+
+  .MobileValidationBox {
+    width: 280px;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: rgb(255, 218, 218);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f00;
+    display: none;
   }
 }

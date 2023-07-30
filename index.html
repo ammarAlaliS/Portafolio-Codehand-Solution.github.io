@@ -169,7 +169,7 @@
                     <input type="text" placeholder="Full name" required maxlength="30">
                 </label>
                 <label class="formInputbox">
-                    <input type="email" placeholder="Email address" required>
+                    <input type="email" placeholder="Email address" required id="validationMobileForm">
                 </label>
 
                 <label class="formTextArea" for="mensaje">
@@ -177,6 +177,7 @@
                         name="textarea"></textarea>
                 </label>
                 <div class="formButton">
+                    <label class="MobileValidationBox"></label>
                     <button type="submit">Get in touch</button>
                 </div>
             </form>
@@ -356,14 +357,16 @@
                         </label>
                     </div>
                     <label class="contactSection__formInputbox">
-                        <input type="email" placeholder="Email address" required>
+                        <input id="EmailInput" type="email" placeholder="Email address" required>
                     </label>
                     <label class="contactSection__formTextArea" for="mensaje">
                         <textarea placeholder="Write me something..." id="mensaje" maxlength="500" required
                             name="textarea"></textarea>
                     </label>
                     <div class="contactSection__formButton">
+                        <label class="validationBox"></label>
                         <button type="submit">Get in touch</button>
+                       
                     </div>
                 </form>
             </div>
@@ -386,6 +389,8 @@
 
     <script src="./src/MobileScript/mobileFirstCard.js"></script>
     <script src="./src/MobileScript/mobileCard.js"></script>
+    <script src="./src/js/validationForm.js"></script>
+    <script src="./src/MobileScript/validationMobileForm.js"></script>
     
    
 </body>
